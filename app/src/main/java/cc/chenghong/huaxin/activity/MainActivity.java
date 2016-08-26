@@ -26,7 +26,6 @@ import java.util.ArrayList;
 
 import cc.chenghong.huaxin.App;
 import cc.chenghong.huaxin.api.Api;
-import cc.chenghong.huaxin.camera_code.UITools;
 import cc.chenghong.huaxin.dialog.AskDialog;
 import cc.chenghong.huaxin.entity.User;
 import cc.chenghong.huaxin.jpush.ExampleUtil;
@@ -35,6 +34,7 @@ import cc.chenghong.huaxin.request.AsyncHttpRequest;
 import cn.jpush.android.api.JPushInterface;
 
 /**
+ * 于160826上传到githua
  * 主页面 hcl 20160224
  */
 public class MainActivity extends BaseActivity {
@@ -131,9 +131,9 @@ public class MainActivity extends BaseActivity {
 //            lp1.height = (int) (height*(1 - 0.618));
 //            ll_content1.setLayoutParams(lp1);
 //
-            LinearLayout.LayoutParams lp2 = (LinearLayout.LayoutParams) ll_content2.getLayoutParams();
-            lp2.height = width;
-            ll_content2.setLayoutParams(lp2);
+        LinearLayout.LayoutParams lp2 = (LinearLayout.LayoutParams) ll_content2.getLayoutParams();
+        lp2.height = width;
+        ll_content2.setLayoutParams(lp2);
 //        }
 
         tv_exit.setOnClickListener(new View.OnClickListener() {
