@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <cc.chenghong.huaxin.view.RoundImageView
+        android:id="@+id/iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="center"
+        android:src="@drawable/c5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv"
+            android:text="chenhua"
+            android:textSize="@dimen/app_text_size_20" />
+
+        <ImageView
+            android:id="@+id/iv_zj"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:background="@drawable/b_z"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_123123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv"
+        android:text=""
+        android:textSize="@dimen/app_text_size_18" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:text="4654654"
+        android:textSize="@dimen/app_text_size_20" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv"
+        android:text="chenhua"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_text_size_20" />
+
+    <ligth_blue.view.NoScrollGridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:numColumns="3"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:layout_toRightOf="@+id/iv"></ligth_blue.view.NoScrollGridView>
+
+    <TextView
+        style="@style/tv_line"
+        android:layout_below="@id/gv"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

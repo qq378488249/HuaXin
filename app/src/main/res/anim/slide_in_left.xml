@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 从右边边滑入 -->
+    <translate
+        android:duration="300"
+        android:fromYDelta="120%p"
+        android:toYDelta="90%p"
+         />
+</set>

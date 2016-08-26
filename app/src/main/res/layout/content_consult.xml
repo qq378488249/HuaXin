@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cc.chenghong.huaxin.activity.ConsultActivity"
+    tools:showIn="@layout/activity_consult">
+
+    <LinearLayout
+        android:id="@+id/ll1_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="标题" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_round_red_white"
+            android:hint="请输入标题"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="内容" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_round_gray_white"
+            android:gravity="top"
+            android:hint="请输入内容"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="添加图片" />
+
+        <TextView
+            style="@style/tv_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <cc.chenghong.huaxin.view.RoundImageView
+            android:id="@+id/iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:src="@drawable/jh" />
+        <ligth_blue.view.NoScrollGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="3dp"
+            android:id="@+id/gv"
+            android:layout_margin="10dp"
+            android:numColumns="4"
+            android:verticalSpacing="3dp"></ligth_blue.view.NoScrollGridView>
+
+        <TextView style="@style/tv_space" />
+    </LinearLayout>
+
+    <cc.chenghong.huaxin.view.RefreshViewPD
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/rv"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@color/white"
+            android:dividerHeight="10dp"
+            android:visibility="visible"></ListView>
+    </cc.chenghong.huaxin.view.RefreshViewPD>
+
+    <TextView style="@style/tv_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/selector_iv_consult_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="咨询医生"
+                android:textColor="@drawable/select_tv_red_black" />
+        </LinearLayout>
+
+        <TextView style="@style/tv_line_vertical" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/selector_iv_consult_rigth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我的咨询"
+                android:textColor="@drawable/select_tv_red_black" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_test_content"
+    android:visibility="gone"
+    android:gravity="center_horizontal"
+    tools:context="cc.chenghong.huaxin.activity.RecordActivity"
+    tools:showIn="@layout/activity_record"
+    >
+    <!-- 体检信息 -->
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test1"
+        style="@style/rescord_content"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="疾病史"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/iv"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test2"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="服药史"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test2"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test3"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="总胆固醇"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test3"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test4"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="糖化血红蛋白"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test4"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test5"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="高密度脂蛋白"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test5"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test6"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="甘油三酯"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test6"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test7"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="空腹血糖"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test7"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_test8"
+        style="@style/rescord_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="拍照上传病例"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_test8"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dx_checkbox_on"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,67 @@
+<cc.chenghong.huaxin.layout.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/b_0012" />
+
+            <TextView
+                style="@style/tv_space"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_red"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="发言"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size_20" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_round_gray_white"
+            android:gravity="top"
+            android:hint="在这发言"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" />
+
+        <cc.chenghong.huaxin.view.RoundImageView
+            android:layout_width="60dp"
+            android:id="@+id/iv_add"
+            android:src="@drawable/jh"
+            android:layout_margin="10dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+</cc.chenghong.huaxin.layout.KeyboardListenRelativeLayout>

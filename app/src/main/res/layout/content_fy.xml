@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency"
+    tools:context="cc.chenghong.huaxin.activity.FyActivity"
+    tools:showIn="@layout/activity_fy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_space"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/b_0012" />
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/tv_space"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_record"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="发言"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size_20" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_round_gray_white"
+            android:gravity="top"
+            android:hint="在这发言"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

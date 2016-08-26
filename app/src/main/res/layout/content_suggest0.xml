@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cc.chenghong.huaxin.activity.Suggest0Activity"
+    tools:showIn="@layout/activity_suggest0">
+
+    <cc.chenghong.huaxin.view.PullToRefreshLayout
+        android:id="@+id/pl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head" />
+        <cc.chenghong.huaxin.view.PullableListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null" />
+        <include layout="@layout/load_more" />
+    </cc.chenghong.huaxin.view.PullToRefreshLayout>
+    <!--<ListView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:id="@+id/lv"-->
+    <!--android:divider="@null"-->
+    <!--android:layout_height="match_parent"></ListView>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        style="@style/bt_base"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/a_0012_trash_can" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="删除建议"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>

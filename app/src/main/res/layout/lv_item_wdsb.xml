@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    tools:context="cc.chenghong.huaxin.activity.BaseActivity">
+
+    <cc.chenghong.huaxin.view.RoundImageView
+        android:id="@+id/iv"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <!--空腹血糖-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chenhua"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_text_size_20" />
+
+        <TextView style="@style/tv_space" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去绑定"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/shape_round_red_white"
+            android:textColor="@color/red"
+            android:textSize="@dimen/app_text_size_20" />
+    </LinearLayout>
+
+
+</LinearLayout>

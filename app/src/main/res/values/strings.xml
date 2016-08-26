@@ -1,0 +1,110 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="app_name">力高欣健康</string>
+    <string name="main_tv1">健康测量</string>
+    <string name="main_tv2">健康建议</string>
+    <string name="main_tv3">健康咨询</string>
+    <string name="main_tv4">健康档案</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_measure">MeasureActivity</string>
+    <string name="title_activity_suggest">SuggestActivity</string>
+    <string name="title_activity_record">RecordActivity</string>
+    <string name="text_size18">18sp</string>
+    <string name="title_activity_consult">ConsultActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_test_press">TestPressActivity</string>
+    <string name="title_activity_look_my_drug">LookMyDrugActivity</string>
+    <string name="title_activity_browse_drug">BrowseDrugActivity</string>
+    <string name="title_activity_add_drug">AddDrugActivity</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+    <string name="title_activity_measurement_test">MeasurementTest</string>
+    <string name="title_activity_record_pressure">RecordPressure</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_edit_pressure">EditPressureActivity</string>
+    <string name="title_activity_trace">TraceActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="title_activity_fat_test">FatTestActivity</string>
+    <string name="title_activity_input_druy">InputDruyActivity</string>
+    <string name="title_activity_intpu_drug">IntpuDrugActivity</string>
+    <string name="title_activity_select_shop">SelectShopActivity</string>
+    <string name="title_activity_suggest_content">SuggestContentActivity</string>
+    <string name="title_activity_suggest0">Suggest0Activity</string>
+    <string name="title_activity_suggest2">Suggest2Activity</string>
+    <string name="title_activity_suggest1">Suggest1Activity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_suggest5">Suggest5Activity</string>
+    <string name="title_activity_suggest2_content">Suggest2ContentActivity</string>
+    <string name="title_activity_record_new">RecordNewActivity</string>
+    <string name="title_activity_grxx">GrxxActivity</string>
+    <string name="title_activity_xgxm">XgxmActivity</string>
+    <string name="title_activity_yyxx">YyxxActivity</string>
+    <string name="title_activity_yyxx0">Yyxx0Activity</string>
+    <string name="title_activity_tjxx">TjxxActivity</string>
+    <string name="title_activity_kfxt">KfxtActivity</string>
+    <string name="title_activity_llbl">LlblActivity</string>
+    <string name="title_activity_xjbl">XjblActivity</string>
+    <string name="title_activity_jbs">JbsActivity</string>
+    <string name="title_activity_wdsb">WdsbActivity</string>
+    <string name="title_activity_bdsb">BdsbActivity</string>
+
+    <string name="scan_text"></string>
+    <string name="title_activity_xzys">XzysActivity</string>
+    <string name="title_activity_zxxq">ZxxqActivity</string>
+    <string name="title_activity_fy">FyActivity</string>
+    <string name="title_activity_ypmc">YpmcActivity</string>
+    <string name="title_activity_jkts">JktsActivity</string>
+
+    <!-- 极光推送 -->
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="viewpager_indicator">1/1</string>
+    <string name="title_activity_agreement">AgreementActivity</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="title_activity_zxxq1">Zxxq1Activity</string>
+    <string name="title_activity_zdytj">ZdytjActivity</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+    <!-- 蓝牙 -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="clear"> CLEAN</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="title_activity_config">ConfigActivity</string>
+
+</resources>

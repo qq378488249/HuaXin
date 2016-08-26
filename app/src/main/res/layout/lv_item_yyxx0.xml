@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll"
+    android:background="@drawable/shape_round_gray_white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context="cc.chenghong.huaxin.activity.BaseActivity"
+    tools:showIn="@layout/activity_base2">
+    <!-- 用药信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="药品名称"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="名称"
+            android:layout_weight="1"
+            android:id="@+id/tv_name"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_delete"
+            android:background="@drawable/selector_iv_suggest0"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="服用剂量"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="3"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_count"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="服用提醒"
+            android:id="@+id/tv_fytx"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="早上"
+            android:padding="3dp"
+            android:background="@drawable/shape_round_gray_white"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_time1"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="中午"
+            android:padding="3dp"
+            android:background="@drawable/shape_round_gray_white"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_time2"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="晚上"
+            android:padding="3dp"
+            android:background="@drawable/shape_round_gray_white"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_time3"
+            android:textSize="@dimen/app_text_size_20"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        style="@style/tv_line" />
+
+    <cc.chenghong.huaxin.view.RoundImageView
+        android:layout_width="80dp"
+        android:id="@+id/iv"
+        android:src="@drawable/c5"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_height="80dp" />
+
+    <ligth_blue.view.NoScrollGridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth">
+
+    </ligth_blue.view.NoScrollGridView>
+</LinearLayout>

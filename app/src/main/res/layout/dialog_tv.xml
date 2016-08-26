@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_gray_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_record"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="姓名"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#cccccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <cc.chenghong.huaxin.view.FlowLayout
+            android:id="@+id/fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/tv_select"
+                android:text="吸烟" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/tv_select"
+                android:text="吸烟" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/tv_select"
+                android:text="无" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/tv_select"
+                android:visibility="gone"
+                android:text="无" />
+
+        </cc.chenghong.huaxin.view.FlowLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#cccccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="@dimen/app_text_size_20"
+            android:textColor="@color/blue_title" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccccc" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/app_text_size_20"
+            android:text="取消" />
+    </LinearLayout>
+
+
+</LinearLayout>

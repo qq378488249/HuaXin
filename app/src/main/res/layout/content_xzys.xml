@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cc.chenghong.huaxin.activity.XzysActivity"
+    tools:showIn="@layout/activity_xzys">
+
+    <cc.chenghong.huaxin.view.RefreshViewPD
+        android:layout_width="match_parent"
+        android:id="@+id/rv"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"></ListView>
+    </cc.chenghong.huaxin.view.RefreshViewPD>
+
+</RelativeLayout>

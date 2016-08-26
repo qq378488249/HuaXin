@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--咨询详情lv头部-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:id="@+id/lc"
+        android:layout_height="200dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/c6"
+        android:id="@+id/iv_null"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_height="200dp" />
+    <TextView
+        style="@style/tv_line"
+        android:layout_height="10dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/tv_center"
+        android:textSize="@dimen/app_text_size_20"
+        android:layout_gravity="left"
+        android:textColor="@color/black"
+        android:text="您本周共进行了1次测量"></TextView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="cc.chenghong.huaxin.activity.BaseActivity"
+    tools:showIn="@layout/activity_base2">
+
+    <!-- 营养方案,运动建议，健康贴士 -->
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/tv_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/gray"
+        android:text="03-19" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:background="@drawable/shape_round_gray_white"
+        android:layout_height="wrap_content">
+
+        <cc.chenghong.huaxin.view.RoundedImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c6"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_top_left="5dp"
+            app:riv_corner_radius_top_right="5dp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/tv_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/app_text_size_20"
+            android:textColor="@color/blue_title"
+            android:text="03-19" />
+
+        <TextView
+            style="@style/tv_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/tv_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/gray"
+            android:text="03-19" />
+    </LinearLayout>
+
+
+</LinearLayout>

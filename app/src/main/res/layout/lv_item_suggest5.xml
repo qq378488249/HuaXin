@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_pressed_gray"
+    android:orientation="horizontal"
+    tools:context="cc.chenghong.huaxin.activity.BaseActivity"
+    tools:showIn="@layout/activity_base2">
+
+    <!-- 服药提醒 -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:background="@color/theme_blue"
+            style="@style/tv_line_vertical" />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/iv1"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/c2"
+            android:layout_height="30dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="药名"
+                android:textColor="@color/black"
+                android:textSize="@dimen/app_text_size_20" />
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/a_0018_trash_can" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="血压"
+            android:textSize="@dimen/app_text_size_20" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="血压"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/app_text_size_20" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="血压"
+            android:textSize="@dimen/app_text_size_20" />
+
+        <cc.chenghong.huaxin.view.RoundImageView
+            android:layout_width="100dp"
+            android:id="@+id/iv2"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/c1"
+            android:visibility="gone"
+            android:layout_height="100dp" />
+
+        <ligth_blue.view.NoScrollGridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="80dp"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth">
+
+        </ligth_blue.view.NoScrollGridView>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            style="@style/tv_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <cc.chenghong.huaxin.view.ElasticListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical"
+        android:focusable="true"
+        android:divider="@null"/>
+
+    <!--<ListView-->
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_round_gray_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/b_0013" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="在这发言"
+            android:textSize="@dimen/app_text_size_20" />
+    </LinearLayout>
+
+    <!--<NumberPicker-->
+        <!--android:id="@+id/np"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:divider="@color/blue_title"></NumberPicker>-->
+    <!--<ligth_blue.view.WheelView-->
+        <!--android:id="@+id/wv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></ligth_blue.view.WheelView>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:id="@+id/tv"-->
+        <!--android:layout_height="wrap_content" />-->
+</LinearLayout>

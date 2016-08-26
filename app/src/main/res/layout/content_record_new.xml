@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cc.chenghong.huaxin.activity.RecordNewActivity"
+    tools:showIn="@layout/activity_record_new">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/pic05"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_pressed_gray"
+                android:padding="12dp"
+                android:src="@drawable/a_0030_" />
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <cc.chenghong.huaxin.view.CircleImageView
+            android:layout_width="60dp"
+            android:id="@+id/iv"
+            app:civ_border_width="0dp"
+            app:civ_border_color="@color/white"
+            android:layout_height="60dp"
+            android:background="@drawable/a_0005_" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size_20" />
+
+        <TextView
+            style="@style/tv_space" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round_white_touming"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round_white_touming"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round_white_touming"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/ll1"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="个人信息"
+            android:textSize="@dimen/app_text_size_20"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="8dp"
+            android:background="@drawable/a_0020_"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/ll2"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="用药信息"
+            android:textSize="@dimen/app_text_size_20"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="8dp"
+            android:background="@drawable/a_0020_"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/ll3"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="体检信息"
+            android:textSize="@dimen/app_text_size_20"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="8dp"
+            android:background="@drawable/a_0020_"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <TextView
+        style="@style/tv_line"/>
+</LinearLayout>

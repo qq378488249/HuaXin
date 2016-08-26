@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_pressed_gray"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    tools:context="cc.chenghong.huaxin.activity.BaseActivity"
+    tools:showIn="@layout/activity_base2">
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="30dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_text_size_20" />
+
+    <View style="@style/tv_space"></View>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_theme_blue"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/iv_rigth"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/a_0020_" />
+
+</LinearLayout>
