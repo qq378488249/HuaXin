@@ -34,7 +34,7 @@ import cc.chenghong.huaxin.request.AsyncHttpRequest;
 import cn.jpush.android.api.JPushInterface;
 
 /**
- * 于160826上传到githua
+ * 于160826上传到github
  * 主页面 hcl 20160224
  */
 public class MainActivity extends BaseActivity {
